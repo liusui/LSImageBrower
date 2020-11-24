@@ -16,6 +16,9 @@
 		F774CDFF255396AB005628A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F774CDFE255396AB005628A0 /* main.m */; };
 		F774CE09255396AB005628A0 /* demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F774CE08255396AB005628A0 /* demoTests.m */; };
 		F774CE14255396AB005628A0 /* demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F774CE13255396AB005628A0 /* demoUITests.m */; };
+		F774CE29255398E0005628A0 /* XXImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = F774CE27255398E0005628A0 /* XXImageBrowser.m */; };
+		F774CE2E25539E68005628A0 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F774CE2D25539E68005628A0 /* test.jpg */; };
+		F781DC49256D09E200EDC442 /* UIViewController+currentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F781DC47256D09E200EDC442 /* UIViewController+currentVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,11 @@
 		F774CE0F255396AB005628A0 /* demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F774CE13255396AB005628A0 /* demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demoUITests.m; sourceTree = "<group>"; };
 		F774CE15255396AB005628A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F774CE27255398E0005628A0 /* XXImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXImageBrowser.m; sourceTree = "<group>"; };
+		F774CE28255398E0005628A0 /* XXImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXImageBrowser.h; sourceTree = "<group>"; };
+		F774CE2D25539E68005628A0 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		F781DC47256D09E200EDC442 /* UIViewController+currentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+currentVC.m"; sourceTree = "<group>"; };
+		F781DC48256D09E200EDC442 /* UIViewController+currentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+currentVC.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +112,14 @@
 		F774CDEB255396A8005628A0 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				F781DC4D256D0B4900EDC442 /* XXImageBrower */,
 				F774CDEC255396A8005628A0 /* AppDelegate.h */,
 				F774CDED255396A8005628A0 /* AppDelegate.m */,
 				F774CDEF255396A8005628A0 /* SceneDelegate.h */,
 				F774CDF0255396A8005628A0 /* SceneDelegate.m */,
 				F774CDF2255396A8005628A0 /* ViewController.h */,
 				F774CDF3255396A8005628A0 /* ViewController.m */,
+				F774CE2D25539E68005628A0 /* test.jpg */,
 				F774CDF5255396A8005628A0 /* Main.storyboard */,
 				F774CDF8255396AB005628A0 /* Assets.xcassets */,
 				F774CDFA255396AB005628A0 /* LaunchScreen.storyboard */,
@@ -135,6 +145,17 @@
 				F774CE15255396AB005628A0 /* Info.plist */,
 			);
 			path = demoUITests;
+			sourceTree = "<group>";
+		};
+		F781DC4D256D0B4900EDC442 /* XXImageBrower */ = {
+			isa = PBXGroup;
+			children = (
+				F774CE28255398E0005628A0 /* XXImageBrowser.h */,
+				F774CE27255398E0005628A0 /* XXImageBrowser.m */,
+				F781DC48256D09E200EDC442 /* UIViewController+currentVC.h */,
+				F781DC47256D09E200EDC442 /* UIViewController+currentVC.m */,
+			);
+			path = XXImageBrower;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F774CDFC255396AB005628A0 /* LaunchScreen.storyboard in Resources */,
+				F774CE2E25539E68005628A0 /* test.jpg in Resources */,
 				F774CDF9255396AB005628A0 /* Assets.xcassets in Resources */,
 				F774CDF7255396A8005628A0 /* Main.storyboard in Resources */,
 			);
@@ -267,9 +289,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F774CDF4255396A8005628A0 /* ViewController.m in Sources */,
+				F774CE29255398E0005628A0 /* XXImageBrowser.m in Sources */,
 				F774CDEE255396A8005628A0 /* AppDelegate.m in Sources */,
 				F774CDFF255396AB005628A0 /* main.m in Sources */,
 				F774CDF1255396A8005628A0 /* SceneDelegate.m in Sources */,
+				F781DC49256D09E200EDC442 /* UIViewController+currentVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +466,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6ZB84S8CY;
 				INFOPLIST_FILE = demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,7 +485,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6ZB84S8CY;
 				INFOPLIST_FILE = demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
